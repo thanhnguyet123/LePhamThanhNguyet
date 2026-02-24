@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tết tại Bảo Lộc</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <!-- Falling Effects Container -->
+    <div class="falling-container" id="fallingContainer"></div>
+
+    <header>
+        <button id="backBtn" class="back-btn hidden" onclick="goBack()">← Quay lại</button>
+        <h1 id="headerTitle">Tết tại Bảo Lộc</h1>
+        
+        <div style="width: 80px;"></div>
+    </header>
+
+    <div class="page-container">
+        <div class="pages-wrapper" id="pagesWrapper">
+            <!-- Page 1: Landing -->
+            <div class="page page-1">
+                <div class="page-1-content">
+                    <h1>Tết tại Bảo Lộc</h1>
+                    <p>Fast tài, fast lộc, fashion 🧧🎉</p>
+                </div>
+            </div>
+
+            <!-- Page 2: Messenger Chat -->
+            <div class="page page-2">
+                <div class="chat-wrapper">
+                    <div class="chat-header">
+                        <h2>Bảo Lộc</h2>
+                    </div>
+                    <div class="chat-container">
+                        <!-- Message A -->
+                        <div class="message message-left" style="animation-delay: 0s;">
+                            <div class="message-bubble">Tết của bạn thế nào rồi?</div>
+                        </div>
+
+                        <!-- Message B -->
+                        <div class="message message-right" style="animation-delay: 0.6s;">
+                            <div class="message-bubble">Toẹt zời. Tôi chả muốn hết tết xíu nào cả</div>
+                        </div>
+                        <!-- Message A -->
+                        <div class="message message-left" style="animation-delay: 0.6s;">
+                            <div class="message-bubble">Bạn ở Bảo Lộc nhỉ? Hãy giới thiệu cho tui ít thông tin về nơi đó đi.</div>
+                        </div>
+
+                        <!-- Location Info -->
+                        <div class="message message-right" style="animation-delay: 1.2s;">
+                            <div class="message-bubble"> Bảo Lộc khá gần so với Sài Gòn, chỉ mất khoảng 4 -5 tiếng đi chuyển</div>
+                        </div>
+
+                        <!-- Question -->
+                        <div class="message message-left" style="animation-delay: 1.8s;">
+                            <div class="message-bubble">Con người ở đó thế nào?</div>
+                        </div>
+
+                        <!-- People Info -->
+                        <div class="message message-right" style="animation-delay: 2.4s;">
+                            <div class="message-bubble">Thân thiện, hiếu khách. Chuẩn bị Tết sớm, giữ gìn truyền thống gia đình.</div>
+                        </div>
+
+                        <!-- Question -->
+                        <div class="message message-left" style="animation-delay: 3s;">
+                            <div class="message-bubble">Làng quê như thế nào?</div>
+                        </div>
+
+                        <!-- Rural Info -->
+                        <div class="message message-right" style="animation-delay: 3.6s;">
+                            <div class="message-bubble">Yên bình, thanh tịnh. Cánh đồng xanh, không khí thơm mộng, đơn sơ nhưng ấm áp. Không những thế bạn còn thể đi săn mây hoặc tìm những chốn bình yêu để chill</div>
+                        </div>
+
+                        <!-- Question -->
+                        <div class="message message-left" style="animation-delay: 4.2s;">
+                            <div class="message-bubble">Tết ở đó khác gì?</div>
+                        </div>
+
+                        <!-- Tet Info -->
+                        <div class="message message-right" style="animation-delay: 4.8s;">
+                            <div class="message-bubble">Pha trộn truyền thống Việt và văn hóa Cao nguyên. Ấm cúng, mộc mạc nhưng ý nghĩa ✨</div>
+                        </div>
+                        <div class="message message-right" style="animation-delay: 4.8s;">
+                            <div class="message-bubble">Muốn xem mùa tết của tui trải qua thế nào không?</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 3: Date Picker -->
+            <div class="page page-3">
+                <div class="date-picker-wrapper">
+                    <h2>Chọn Ngày Tết</h2>
+                    <div class="cupertino-picker">
+                        <h3>📅 Các Ngày Tết</h3>
+                        <div class="date-list" id="dateList">
+                            <div class="date-option" onclick="selectDate('23/1', event)">10/2 (23 Tháng Chạp)</div>
+                            <div class="date-option" onclick="selectDate('28/1', event)">15/2 (28 Tháng Chạp)</div>
+                            <div class="date-option" onclick="selectDate('29/1', event)">16/2 (29 Tháng Chạp)</div>
+                            <div class="date-option" onclick="selectDate('1/2', event)">17/2 (Tết Âm Lịch)</div>
+                            <div class="date-option" onclick="selectDate('2/2', event)">18/2 (2 Tháng Giêng)</div>
+                        </div>
+                        <button class="select-btn" onclick="goToDayDetail()">Xem Chi Tiết</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 4: Day Details 23/1 -->
+            <div class="page page-day">
+                <div class="day-detail-wrapper">
+                    <h2>10/2 (23 Tháng Chạp)</h2>
+                    <div class="day-detail-content">
+
+    <div class="row-box">
+        <div class="image-box">
+            <img src="629891630_17942609382117373_8403096506409334264_n.jpg" alt="Về nhà" class="day-img">
+        </div>
+        <div class="caption-box">
+            <h4>Về Nhà</h4>
+            <p>Đi thật xa để trở về ✨</p>
+        </div>
+    </div>
+                        
+    <div class="row-box">
+        <div class="image-box">
+            <img src="z7551640090043_e2c95f4580614a86ebb3767eb6820468.jpg" alt="Về nhà" class="day-img">
+        </div>
+    
+    </div>
+
+    <div class="row-box">
+    <div class="image-box">
+        <iframe 
+            class="day-img"
+            width="100%" 
+            height="420"
+            style="border-radius: 15px;"
+            src="https://www.youtube.com/embed/4PKDYDAtZZY"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+    <div class="caption-box">
+        <h4>Dọn Nhà Ngày Tết</h4>
+        <p>Có thể là mãi không xong luôn T.T</p>
+    </div>
+</div>
+
+    <div class="row-box">
+        <div class="image-box">
+            <img src="z7549259302294_ba4b5141b884338fa10397b96acaa942.jpg" alt="Cúng Ông Công Ông Táo" class="day-img">
+        </div>
+        <div class="caption-box">
+            <h4>Cúng Ông Công Ông Táo</h4>
+            <p>23 tháng Chạp, mâm cúng set up gọn gàng: gà luộc, xôi gấc đỏ au, hoa cúc vàng vibe Tết ngập tràn. Vàng mã, mũ Táo quân phía sau, cá chuẩn bị phóng sinh cho đủ lễ. Nhìn là thấy Tết tới sát nút luôn ✨</p>
+        </div>
+    </div>
+
+</div>
+                </div>
+                <div class="contact-wrapper">
+                    <h3>Liên Hệ & Đóng Góp</h3>
+                    <div class="contact-grid">
+                        <form class="feedback-form" onsubmit="submitForm(event)">
+                            <h4>📝 Gửi Gợi Ý</h4>
+                            <input type="text" placeholder="Họ và tên" required>
+                            <input type="email" placeholder="Email" required>
+                            <textarea placeholder="Gợi ý / Bình luận" rows="4" required></textarea>
+                            <button type="submit">Gửi Gợi Ý</button>
+                        </form>
+                        <div class="map-wrapper">
+                            <h4>📍 Bảo Lộc, Lâm Đồng</h4>
+                            <iframe 
+                                src="https://www.google.com/maps?q=Bảo+Lộc,+Lâm+Đồng&output=embed"
+                                width="100%"
+                                height="300"
+                                style="border:0;"
+                                loading="eager"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="creator-box">
+                        <h4>Thông Tin Người Làm Web</h4>
+                        <p><strong>Tác Giả:</strong> Lê Phạm Thanh Nguyệt</p>
+                        <p><strong>MSSV:</strong> DH52301343</p>
+                        <p><strong>Lớp:</strong> D23_TH11</p>
+                        <p><strong>Khoa:</strong> Công Nghệ Thông Tin</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 5: Day Details 28/1 -->
+            <div class="page page-day">
+                <div class="day-detail-wrapper">
+                    <h2>15/2 (28 Tháng Chạp)</h2>
+                    <div class="day-detail-content">
+
+    <div class="row-box">
+        <div class="image-box">
+            <img src="z7550512140681_62a2dc79ffa6fd05dfb567be7f656d14.jpg" alt="Gói bánh chưng" class="day-img">
+        </div>
+        <div class="caption-box">
+            <h4>Gói Bánh Chưng</h4>
+            <p>Phụ việc giúp mấy cô giáo gói bánh chưng tại trường cũ. Lần đầu trải nghiệm gói có thể không suôn sẻ lắm nhưng vẫn là 1 trải nghiệm đáng để thử.</p>
+        </div>
+    </div>
+
+    <div class="row-box">
+    <div class="image-box">
+        <iframe 
+            class="day-img"
+            width="100%" 
+            height="420"
+            style="border-radius: 15px;"
+            src="https://www.youtube.com/embed/gWIM9K7AYnA"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+    <div class="caption-box">
+        <h4>Xem Hoa</h4>
+        <p>🌸 Hoa xếp kín cả vỉa hè, màu hồng tím nhìn là thấy Tết tới sát nút. Đi ngang thôi cũng auto muốn mua một chậu về “chill” trước nhà ✨</p>
+    </div>
+</div>
+
+</div>
+                </div>
+                <div class="contact-wrapper">
+                    <h3>Liên Hệ & Đóng Góp</h3>
+                    <div class="contact-grid">
+                        <form class="feedback-form" onsubmit="submitForm(event)">
+                            <h4>📝 Gửi Gợi Ý</h4>
+                            <input type="text" placeholder="Họ và tên" required>
+                            <input type="email" placeholder="Email" required>
+                            <textarea placeholder="Gợi ý / Bình luận" rows="4" required></textarea>
+                            <button type="submit">Gửi Gợi Ý</button>
+                        </form>
+                        <div class="map-wrapper">
+                            <h4>📍 Bảo Lộc, Lâm Đồng</h4>
+                            <iframe 
+                                src="https://www.google.com/maps?q=Bảo+Lộc,+Lâm+Đồng&output=embed"
+                                width="100%"
+                                height="300"
+                                style="border:0;"
+                                loading="eager"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="creator-box">
+                        <h4>Thông Tin Người Làm Web</h4>
+                        <p><strong>Tác Giả:</strong> Lê Phạm Thanh Nguyệt</p>
+                        <p><strong>MSSV:</strong> DH52301343</p>
+                        <p><strong>Lớp:</strong> D23_TH11</p>
+                        <p><strong>Khoa:</strong> Công Nghệ Thông Tin</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 6: Day Details 29/1 -->
+            <div class="page page-day">
+                <div class="day-detail-wrapper">
+                    <h2>16/2 (29 Tháng Chạp)</h2>
+                    <div class="day-detail-content">
+
+    <div class="row-box">
+        <div class="image-box">
+            <img src="625766482_17943628191123166_4991222437147148750_n.jpg" alt="Chùa Linh Quy Pháp Ấn" class="day-img">
+        </div>
+        <div class="caption-box">
+            <h4>Chùa Linh Quy Pháp Ấn</h4>
+            <p>Chùa Linh Quy Pháp Ấn là một trong những ngôi chùa nổi tiếng tại Bảo Lộc, với kiến trúc cổ kính và không khí thanh tịnh. Đây là nơi nhiều người đến cầu mong bình an và may mắn trong năm mới.</p>
+        </div>
+    </div>                
+                        
+    <div class="row-box">
+        <div class="image-box">
+            <img src="z7549267473466_52b1f03af068d1e761075ced3dbc85f7.jpg" alt="Mâm cơm tất niên" class="day-img">
+        </div>
+        <div class="caption-box">
+            <h4>Mâm Cơm Tất Niên</h4>
+            <p>Mâm cơm tất niên được chuẩn bị công phu với những món ăn đặc biệt. Có canh cua, vịt luộc, cá cắt lát tươi sắc, thịt kho tàu thơm ngon. Mâm bàn được bày trí đầy đủ - thức ăn cho cả gia đình kể cả những người thân đã ra đi.</p>
+        </div>
+    </div>
+    
+
+    <div class="row-box">
+        <div class="image-box">
+            <img src="z7549266217134_fb8713fe5cfd5d1a0f44d98a35ef476a.jpg" alt="Mâm cúng" class="day-img">
+        </div>
+        <div class="caption-box">
+            <h4>Mâm Cúng</h4>
+            <p>Bàn thờ set up full lễ, hoa vàng rực, trái cây, gà luộc, vàng mã đủ bộ. Nhìn là thấy không khí Tết tràn ngập, vừa trang nghiêm vừa ấm áp 🧧✨</p>
+        </div>
+    </div>
+
+</div>
+                </div>
+                <div class="contact-wrapper">
+                    <h3>Liên Hệ & Đóng Góp</h3>
+                    <div class="contact-grid">
+                        <form class="feedback-form" onsubmit="submitForm(event)">
+                            <h4>📝 Gửi Gợi Ý</h4>
+                            <input type="text" placeholder="Họ và tên" required>
+                            <input type="email" placeholder="Email" required>
+                            <textarea placeholder="Gợi ý / Bình luận" rows="4" required></textarea>
+                            <button type="submit">Gửi Gợi Ý</button>
+                        </form>
+                        <div class="map-wrapper">
+                            <h4>📍 Bảo Lộc, Lâm Đồng</h4>
+                            <iframe 
+                                src="https://www.google.com/maps?q=Bảo+Lộc,+Lâm+Đồng&output=embed"
+                                width="100%"
+                                height="300"
+                                style="border:0;"
+                                loading="eager"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="creator-box">
+                        <h4>Thông Tin Người Làm Web</h4>
+                        <p><strong>Tác Giả:</strong> Lê Phạm Thanh Nguyệt</p>
+                        <p><strong>MSSV:</strong> DH52301343</p>
+                        <p><strong>Lớp:</strong> D23_TH11</p>
+                        <p><strong>Khoa:</strong> Công Nghệ Thông Tin</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 7: Day Details 1/2 -->
+            <div class="page page-day">
+                <div class="day-detail-wrapper">
+                    <h2>17/2 (Tết Âm Lịch)</h2>
+                    <div class="day-detail-content">
+
+    <div class="row-box">
+        <div class="image-box">
+            <img src="z7550722826412_ab2af050adbeeaec5af9b3714f37d67a.jpg" alt="Sáng mùng 1" class="day-img">
+        </div>
+        <div class="caption-box">
+            <h4>Chùa Ngày Tết</h4>
+            <p>Tượng Phật uy nghi giữa không gian trang nghiêm, hoa cúc vàng rực hai bên, lễ vật bày chỉn chu phía trước. Ánh đèn ấm áp làm mọi thứ nhìn vừa linh thiêng vừa bình yên.</p>
+        </div>
+    </div>
+</div>
+
+<div class="row-box">
+    <div class="image-box">
+        <iframe 
+            class="day-img"
+            width="100%" 
+            height="420"
+            style="border-radius: 15px;"
+            src="https://www.youtube.com/embed/uzgDSmrplgg"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+    <div class="caption-box">
+        <h4>Vi Vu "Paris"</h4>
+        <p>🌸Lắng nghe chiều xuống thành phố mộng mơ. Hehe</p>
+    </div>
+</div>
+
+                </div>
+                <div class="contact-wrapper">
+                    <h3>Liên Hệ & Đóng Góp</h3>
+                    <div class="contact-grid">
+                        <form class="feedback-form" onsubmit="submitForm(event)">
+                            <h4>📝 Gửi Gợi Ý</h4>
+                            <input type="text" placeholder="Họ và tên" required>
+                            <input type="email" placeholder="Email" required>
+                            <textarea placeholder="Gợi ý / Bình luận" rows="4" required></textarea>
+                            <button type="submit">Gửi Gợi Ý</button>
+                        </form>
+                        <div class="map-wrapper">
+                            <h4>📍 Bảo Lộc, Lâm Đồng</h4>
+                            <iframe 
+                                src="https://www.google.com/maps?q=Bảo+Lộc,+Lâm+Đồng&output=embed"
+                                width="100%"
+                                height="300"
+                                style="border:0;"
+                                loading="eager"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="creator-box">
+                        <h4>Thông Tin Người Làm Web</h4>
+                        <p><strong>Tác Giả:</strong> Lê Phạm Thanh Nguyệt</p>
+                        <p><strong>MSSV:</strong> DH52301343</p>
+                        <p><strong>Lớp:</strong> D23_TH11</p>
+                        <p><strong>Khoa:</strong> Công Nghệ Thông Tin</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 7: Day Details 2/2 -->
+            <div class="page page-day">
+                <div class="day-detail-wrapper">
+                    <h2>18/2 (2 Tháng Giêng)</h2>
+                    <div class="day-detail-content">
+
+    <div class="row-box">
+        <div class="image-box">
+            <img src="629120619_17945379018102528_1916990849526352520_n.jpg" alt="Thác Liêng Ài" class="day-img">
+        </div>
+        <div class="caption-box">
+            <h4>Thác Liêng Ài</h4>
+            <p>Thác Liêng Ài là một trong những thác nước nổi tiếng tại Bảo Lộc, với vẻ đẹp tự nhiên và không khí trong lành. Nơi đây thu hút nhiều du khách đến tham quan và thư giãn.</p>
+        </div>
+    </div>                    
+
+    <div class="row-box">
+        <div class="image-box">
+            <img src="z7551734901830_21da0215ab410c18aa852ba2838e8f7b.jpg" alt="Chợ Đêm Bảo Lộc" class="day-img">
+        </div>
+        <div class="caption-box">
+            <h4>Chợ Đêm Bảo Lộc</h4>
+            <p>Chợ đêm nhộn nhịp tại Bảo Lộc, nơi giao lưu văn hóa và mua bán các mặt hàng truyền thống.</p>
+        </div>
+    </div>
+
+    <div class="row-box">
+        <div class="image-box">
+            <img src="z7551734145504_a1b24212b2236294482d5a14c76078f3.jpg" alt="Chợ Đêm Bảo Lộc" class="day-img">
+        </div>
+        
+    </div>
+
+    <div class="row-box">
+        <div class="image-box">
+            <img src="640133770_1242449194656193_8417953578917133218_n.jpg" alt="Chợ Đêm Bảo Lộc" class="day-img">
+        </div>
+        
+    </div>
+
+    <div class="row-box">
+        <div class="image-box">
+            <img src="637785024_1242447187989727_5537337824885958717_n.jpg" alt="Chợ Đêm Bảo Lộc" class="day-img">
+        </div>
+        
+    </div>
+
+</div>
+                </div>
+                <div class="contact-wrapper">
+                    <h3>Liên Hệ & Đóng Góp</h3>
+                    <div class="contact-grid">
+                        <form class="feedback-form" onsubmit="submitForm(event)">
+                            <h4>📝 Gửi Gợi Ý</h4>
+                            <input type="text" placeholder="Họ và tên" required>
+                            <input type="email" placeholder="Email" required>
+                            <textarea placeholder="Gợi ý / Bình luận" rows="4" required></textarea>
+                            <button type="submit">Gửi Gợi Ý</button>
+                        </form>
+                        <div class="map-wrapper">
+                            <h4>📍 Bảo Lộc, Lâm Đồng</h4>
+                            <iframe 
+                                src="https://www.google.com/maps?q=Bảo+Lộc,+Lâm+Đồng&output=embed"
+                                width="100%"
+                                height="300"
+                                style="border:0;"
+                                loading="eager"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="creator-box">
+                        <h4>Thông Tin Người Làm Web</h4>
+                        <p><strong>Tác Giả:</strong> Lê Phạm Thanh Nguyệt</p>
+                        <p><strong>MSSV:</strong> DH52301343</p>
+                        <p><strong>Lớp:</strong> D23_TH11</p>
+                        <p><strong>Khoa:</strong> Công Nghệ Thông Tin</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="nav-arrow nav-arrow-right show" id="arrowRight" onclick="nextPage()">→</div>
+        <div class="nav-arrow nav-arrow-left" id="arrowLeft" onclick="prevPage()">←</div>
+    </div>
+
+    <script>
+        // Variables
+        let currentPage = 0;
+        let selectedDate = '';
+        const totalPages = 8; // Pages 0-2: intro, about, date picker; Pages 3-7: day details
+        const dateToPageMap = {
+            '23/1': 3,
+            '28/1': 4,
+            '29/1': 5,
+            '1/2': 6,
+            '2/2': 7
+        };
+        let fallingInterval = null;
+
+        // Next page
+        function nextPage() {
+            if (currentPage < totalPages - 1) {
+                currentPage++;
+                updatePageView();
+            }
+        }
+
+        // Previous page
+        function prevPage() {
+            if (currentPage > 0) {
+                currentPage--;
+                updatePageView();
+            }
+        }
+
+        // Go back from day detail to date picker
+        function goBack() {
+            currentPage = 2; // Date picker page
+            selectedDate = '';
+            document.querySelectorAll('.date-option').forEach(el => el.classList.remove('active'));
+            updatePageView();
+        }
+        function stopAllVideos() {
+            const iframes = document.querySelectorAll("iframe");
+
+            iframes.forEach(iframe => {
+                if (iframe.src.includes("youtube.com")) {
+                    const src = iframe.src;
+                    iframe.src = "";
+                    iframe.src = src;
+                }
+            });
+        }
+        // Update page view
+        function updatePageView() {
+            stopAllVideos();
+            const wrapper = document.getElementById('pagesWrapper');
+            wrapper.style.transform = `translateX(-${currentPage * 100}%)`;
+
+        const pages = document.querySelectorAll(".page");
+        pages.forEach(page => {
+            page.scrollTop = 0;
+        });
+
+            // Update arrow visibility
+            updateArrows();
+            
+            // Update header
+            updateHeader();
+            
+            // Control falling effects - only on page 1 (landing page)
+            if (currentPage === 0) {
+                startFallingEffects();
+            } else {
+                stopFallingEffects();
+            }
+            // Trigger chat animation when entering page 2
+            if (currentPage === 1) {
+            triggerChatAnimation();
+            }
+            
+        }
+
+        // Update arrows
+        function updateArrows() {
+            const arrowRight = document.getElementById('arrowRight');
+            const arrowLeft = document.getElementById('arrowLeft');
+            
+            // Only show arrows on pages 0-2 (landing, about, date picker)
+            if (currentPage < 3) {
+                if (currentPage === 0) {
+                    arrowLeft.classList.remove('show');
+                    arrowRight.classList.add('show');
+                } else if (currentPage === 2) {
+                    arrowLeft.classList.add('show');
+                    arrowRight.classList.remove('show');
+                } else {
+                    arrowLeft.classList.add('show');
+                    arrowRight.classList.add('show');
+                }
+            } else {
+                // Hide arrows on day detail pages (3-8)
+                arrowLeft.classList.remove('show');
+                arrowRight.classList.remove('show');
+            }
+        }
+
+        // Update header
+        function updateHeader() {
+            const headerTitle = document.getElementById('headerTitle');
+            const backBtn = document.getElementById('backBtn');
+            const titles = [
+                
+            ];
+            
+            headerTitle.textContent = titles[currentPage];
+            
+            // Show back button only on day detail pages
+            if (currentPage >= 3) {
+                backBtn.classList.remove('hidden');
+            } else {
+                backBtn.classList.add('hidden');
+            }
+        }
+
+        // Select date
+        function selectDate(date, event) {
+            selectedDate = date;
+            document.querySelectorAll('.date-option').forEach(el => el.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+
+        // Go to day detail
+        function goToDayDetail() {
+            if (!selectedDate) {
+                alert('Vui lòng chọn một ngày!');
+                return;
+            }
+            const pageIndex = dateToPageMap[selectedDate];
+            currentPage = pageIndex;
+            updatePageView();
+        }
+
+
+        // Submit form
+        function submitForm(event) {
+            event.preventDefault();
+            alert('Cảm ơn bạn đã gửi gợi ý! Chúng tôi sẽ xem xét và phản hồi sớm nhất có thể.');
+            event.target.reset();
+        }
+        function triggerChatAnimation() {
+    const messages = document.querySelectorAll('.message');
+
+    messages.forEach((msg, index) => {
+        msg.classList.remove('animate');
+        msg.style.opacity = 0;
+
+        setTimeout(() => {
+            msg.classList.add('animate');
+        }, index * 600);
+    });
+}
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') nextPage();
+            if (e.key === 'ArrowLeft') prevPage();
+        });
+
+        // Initialize on load
+        window.addEventListener('load', () => {
+            updatePageView();
+        });
+
+        // Falling Effects - Cherry Blossoms and Money
+        function startFallingEffects() {
+            if (fallingInterval) return; // Already running
+            
+            const container = document.getElementById('fallingContainer');
+            const items = ['🌸', '💰']; // Cherry blossom and money
+            
+            fallingInterval = setInterval(() => {
+                const item = document.createElement('div');
+                item.className = 'falling-item';
+                item.textContent = items[Math.floor(Math.random() * items.length)];
+                
+                // Random horizontal position
+                const randomX = Math.random() * window.innerWidth;
+                item.style.left = randomX + 'px';
+                item.style.top = '-50px';
+                
+                // Random animation duration (3-6 seconds)
+                const duration = 3 + Math.random() * 3;
+                item.style.animationDuration = duration + 's';
+                
+                // Random opacity
+                item.style.opacity = 0.6 + Math.random() * 0.4;
+                
+                container.appendChild(item);
+                
+                // Remove element after animation completes
+                setTimeout(() => {
+                    item.remove();
+                }, duration * 1000);
+            }, 300); // Create new item every 300ms
+        }
+        
+        // Stop falling effects
+        function stopFallingEffects() {
+            if (fallingInterval) {
+                clearInterval(fallingInterval);
+                fallingInterval = null;
+            }
+            // Clear remaining items
+            const container = document.getElementById('fallingContainer');
+            container.innerHTML = '';
+        }
+    </script>
+</body>
+</html>
